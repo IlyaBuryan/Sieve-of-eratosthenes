@@ -6,8 +6,8 @@ Allows to effectively find an №N prime number
 
 def erat_fun(n):
     """With Sieve-of-eratosthenes"""
-    prime = [2, 3]
-    i = 4
+    prime = [2]
+    i = 3
     while len(prime) < n:
         if all(map(lambda k: i % k != 0, prime)):
             prime.append(i)
